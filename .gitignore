@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore colcon cache if present in workspace (usually in ~/.colcon though)
+.colcon/
+
+# Common OS files
+.DS_Store
+Thumbs.db
+
+# Common editor backup files
+*~
+*.swp
+*.swo
