@@ -3,6 +3,18 @@
 This project implements a simple chase simulation using ROS 2 Humble and TurtleSim.
 A 'Tom' turtle chases a 'Jerry' turtle. When Tom gets close, Jerry moves towards a new random location within the boundaries.
 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/debd05f2-c5d0-43e6-a37f-0f8280ff0d1e" alt="Sim Start" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/5b998e37-4da7-4622-92cc-699d741e5185" alt="Tom Chasing" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0c67263e-0d17-46bd-a400-6286ca40b172" alt="Jerry Runs" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/43d46cf6-598e-46f1-9be8-12f40ce70ea7" alt="Another Chase Cycle" width="300"></td>
+  </tr>
+</table>
+
+
 ## Features
 
 *   Uses separate nodes/logic for Tom (chaser) and Jerry (target).
