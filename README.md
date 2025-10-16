@@ -48,8 +48,13 @@ By the end of this tutorial, you will know how to:
 Before you begin, you need three things:
 
 1.  **ROS 2 Humble:** If you do not have ROS 2 installed, please follow the **[Official Ubuntu Installation Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)**.
-2.  **Git:** This is usually pre-installed on Ubuntu.
-3.  **A ROS 2 Workspace:** This is a folder where you will store and build your ROS projects. If you don't have one, create it now:
+2.  **TurtleSim Package:** This is the package we will need to run this simulation.
+    ```bash
+    # Make sure you have this package.
+    sudo apt install ros-humble-turtlesim
+    ```
+3.  **Git:** This is usually pre-installed on Ubuntu.
+4.  **A ROS 2 Workspace:** This is a folder where you will store and build your ROS projects. If you don't have one, create it now:
     ```bash
     # This command creates a directory named 'ros2_ws' with a 'src' folder inside it.
     mkdir -p ~/ros2_ws/src
