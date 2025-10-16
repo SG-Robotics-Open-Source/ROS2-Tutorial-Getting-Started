@@ -22,7 +22,9 @@ setup(
     maintainer_email='Shahazad.abdulla.engineer@gmail.com',
     description='Package of tom and jerry usign turtlesim for learning purpose with projects',
     license='Apache License 2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'simple_mover = turtle_control.simple_mover:main',
