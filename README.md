@@ -80,7 +80,7 @@ Now that you have the code, you need to build it so ROS 2 can execute it.
 ```bash
 # Navigate back to the root of your workspace.
 # You must always run the build command from here.
-cd ~/ros2_ws
+cd ~/ros2_tutorial_ws
 ```
 
 ```bash
