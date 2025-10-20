@@ -48,37 +48,29 @@ By the end of this tutorial, you will know how to:
 Before you begin, you need three things:
 
 1.  **ROS 2 Humble:** If you do not have ROS 2 installed, please follow the **[Official Ubuntu Installation Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)**.
-2.  **TurtleSim Package:** This is the package we will need to run this simulation.
+    ```bash
+    # Use this command to add the source script to your bashrc file so you dont have to type the above command everytime you open a terminal(mentioned in the installation page)
+    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+    ```
+3.  **TurtleSim Package:** This is the package we will need to run this simulation.
     ```bash
     # Make sure you have this package.
     sudo apt install ros-humble-turtlesim
     ```
-3.  **Git:** This is usually pre-installed on Ubuntu.
-4.  **A ROS 2 Workspace:** This is a folder where you will store and build your ROS projects. If you don't have one, create it now:
-    ```bash
-    # This command creates a directory named 'ros2_ws' with a 'src' folder inside it.
-    mkdir -p ~/ros2_ws/src
-    ```
-
+4.  **Git:** This is usually pre-installed on Ubuntu.
+    
 ---
 
 ## Step 2: The Standard Workflow (Clone, Build, Run)
 
-This is the standard process for any ROS 2 project you find on GitHub. Open a new terminal and follow along!
+This entire repository is a ROS 2 workspace. You just need to clone it, build it, and run it.
 
-### 2.1 - Clone the Code
+### 2.1 - Clone the Workspace
 
-First, we need to download the code from this repository into your workspace.
-
+Open a terminal in your Home directory (or wherever you like to keep your projects) and clone this repository.
 ```bash
-# Navigate into your workspace's 'src' folder.
-# All ROS 2 package source code lives here.
-cd ~/ros2_ws/src
-```
-
-```bash
-# Use git to download (clone) the repository.
-git clone https://github.com/SG-Robotics-Open-Source/ROS2-Tutorial-Getting-Started.git
+# This command downloads the entire workspace folder to your computer.
+git clone https://github.com/SG-Robotics-Open-Source/ros2_tutorial_ws.git
 ```
 
 ### 2.2 - Build the Package
@@ -105,14 +97,6 @@ Your code is built! The final step is to run it.
 # IMPORTANT: You must run this command in any new terminal you open.
 source install/setup.bash
 ```
-
-### OR
-
-```bash
-# Use this command to add the source script to your bashrc file so you dont have to type the above command everytime you open a terminal
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-```
-
 ```bash
 # Use 'ros2 launch' to find our package and run the main launch file.
 # This single command starts the simulation and our code.
